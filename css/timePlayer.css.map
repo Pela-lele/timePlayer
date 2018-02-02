@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,qBAAqB;EACpB,KAAK,EAAE,IAAI;EACR,WAAW,EAAE,8CAA8C;EAC3D,UAAU,EAAE,UAAU;;AACzB,+BAAS;EACR,KAAK,EAAE,IAAI",
+"sources": ["timePlayer.scss"],
+"names": [],
+"file": "timePlayer.css"
+}

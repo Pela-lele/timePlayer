@@ -1,0 +1,10 @@
+.timePlayer-container {
+  width: 100%;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  box-sizing: border-box;
+}
+.timePlayer-container .back-bar {
+  width: 100%;
+}
+
+/*# sourceMappingURL=timePlayer.css.map */
