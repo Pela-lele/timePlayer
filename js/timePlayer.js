@@ -4,8 +4,11 @@
 		return this.init.apply(this, arguments);
 	};
 	timePlayer.prototype = {
-		init: function(){
-			
+		defaults: {
+
+		},
+		init: function(node, options){
+			this.options = $.extend({}, this.defaults, options);
 		}
 	};
 

@@ -10,12 +10,10 @@
 		margin: 0;
 	}
 	#timePlayer{
-		height: 50px;
-	    width: 90%;
-	    position: absolute;
-	    bottom: 0;
-	    left: 50%;
-	    transform: translateX(-50%);
+		position: absolute;
+	    height: 70px;
+	    width: 100%;
+	    bottom: 0px;
 	}
 	</style>
 </head>
@@ -33,7 +31,15 @@
 					<div class="line-bar"></div>
 				</div>
 				<div class="scale">
-					<span style="left: 0%;border-color:#444444"><ins style="width: 100.35483870967742px">2017-09-12</ins></span>
+					<span style="left: 0%"><ins>2017-09-12</ins></span>
+					<span style="left: 100%"><ins>2017-10-12</ins></span>
+				</div>
+				<div class="tools">
+					<a href="javascript:void(0)" title="慢速" class="rewind"></a>
+					<a href="javascript:void(0)" title="播放" class="play"></a>
+					<a href="javascript:void(0)" title="结束" class="stop"></a>
+					<a href="javascript:void(0)" title="快速" class="forward"></a>
+
 				</div>
 			</div>
 		</div>
@@ -41,7 +47,16 @@
 	<script type="text/javascript" src="./js/jquery.min.js"></script>
 	<script type="text/javascript" src="./js/timePlayer.js"></script>
 	<script type="text/javascript">
-	$("#timePlayer").timePlayer();
+	$(function(){
+		$("#timePlayer").timePlayer({
+			from : new Date(2018,1,20),
+			to : new Date(2018,1,21),
+			ondragend: function(){
+            	
+            }
+		});
+	})
+	
 	</script>
 </body>
 </html>
